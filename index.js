@@ -71,7 +71,7 @@ app.post("/getSession", (req, res) => {
     console.log(conn.instanceUrl);
     console.log("User ID: " + userInfo.id);
     console.log("Org ID: " + userInfo.organizationId);
-    res.send({ userInfo, instanceUrl: conn.instanceUrl });
+    res.send({ userId: userInfo.id });
   });
 
   /* console.log("URL LOGIN: ", SF_LOGIN_URL);
